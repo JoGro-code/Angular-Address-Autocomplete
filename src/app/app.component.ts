@@ -3,18 +3,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <div class="container">
-      <h1>GooglePlaces</h1>
-      <input
-        ngx-google-places-autocomplete
-        #placesRef="ngx-places"
-        (onAddressChange)="handleAddressChange($event)"
-      />
-      <p></p>
-      <button class="btn btn-primary" (click)="onSearch()">Suchen</button>
-    </div>
-  `,
+  templateUrl: 'app.component.html',
 })
 export class AppComponent {
   title = 'auto-complete';
